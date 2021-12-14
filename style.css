@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Readex+Pro:wght@300&display=swap');
+body {
+    background-color: #ebe7e5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    /* background-image: url("banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center; */
+}
+
+h2, h3, h4 {
+    font-family: 'Domine', serif;
+}
+
+.desk {
+    display: block;
+}
+
+.mob {
+    display: none;
+}
+
+.container {
+    padding: 0 20vw;
+}
+
+.container > div {
+    border-radius: 1.5rem;
+    padding: 1rem;
+    background-color: rgba(255,255,255,0.6);
+    font-family: 'Readex Pro', sans-serif;
+    margin-bottom: 1vw;
+}
+
+.per {
+    font-size: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+table {
+    text-align: left;
+    margin: auto;
+}
+
+td {
+    padding: 1vw;
+}
+
+tr {
+    margin: 1vw;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+@media screen and (max-width:1000px) {
+    body {
+        font-size: 1rem;
+    }
+    .container {
+        padding: 0;
+        margin: 1vw;
+        margin-top: 0;
+    }
+    .desk {
+        display: none;
+    }
+    .mob {
+        display: block;
+    }
+    .per {
+        font-size: 0.8rem;
+    }
+}
