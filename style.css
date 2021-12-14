@@ -14,6 +14,27 @@ body {
 
 h2, h3, h4 {
     font-family: 'Domine', serif;
+    color: #d6a53e;
+}
+
+#nav {
+    background-color: #7c251d;
+    display: flex;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+    width: 100%;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 0;
+}
+
+#nav > div {
+    width: 25%;
+    padding: 1rem;
 }
 
 .desk {
@@ -59,6 +80,27 @@ tr {
 
 td:last-child {
     text-align: right;
+    color: rgba(0,0,0,0.6);
+}
+
+.register {
+    display: flex;
+    padding: 1vw 5vw;
+}
+
+.register > div {
+    background-color: #7c251d;
+    width: 50%;
+    color: #d6a53e;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    padding: 0.5vw 1vw;
+    margin: 1vw 4vw;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 @media screen and (max-width:1000px) {
@@ -78,5 +120,8 @@ td:last-child {
     }
     .per {
         font-size: 0.8rem;
+    }
+    #nav {
+        display: none;
     }
 }

@@ -13,6 +13,14 @@
         <div class="container">
             <img src="banner.png" class="desk" alt="GitHub X IITMBSc" />
             <img src="banner-mob.png" class="mob" alt="GitHub X IITMBSc" />
+        </div>
+        <div id="nav">
+            <div><a target="_blank" href="https://forms.gle/9YXQDzeEfokzCQjQA">Register</a></div>
+            <div><a target="_blank" href="https://docs.google.com/document/d/13zw5O6DsyLknVMzsOmxUwJ_dpJOXGgIidJJTVWenrv0/edit?usp=sharing">Prerequisites</a></div>
+            <div><a target="_blank" href="https://docs.google.com/document/d/1cH4zMOlnf-8zA1goCKi615cDM0FTxAnlttIgQA28ttM/edit?usp=sharing">Rules</a></div>
+            <div><a target="_blank" href="https://forms.gle/9AJyoHxjQHBrWdLt8">Submission</a></div>
+        </div>
+        <div class="container first">
             <div>
                 <h2>Workshop: Session I</h2>
                 <h4>10:00AM, 19th December</h4>
@@ -32,6 +40,10 @@
                     <tr><td>03:00 PM IST</td><td>Setting up your site</td></tr>
                     <tr><td>03:30 PM IST</td><td>Tweaking your site</td></tr>
                 </table>
+                <div class="register">
+                    <div class="register-btn"><a target="_blank" href="https://forms.gle/9YXQDzeEfokzCQjQA">Register now!!</a></div>
+                    <div class="register-btn"><a target="_blank" href="https://docs.google.com/document/d/13zw5O6DsyLknVMzsOmxUwJ_dpJOXGgIidJJTVWenrv0/edit?usp=sharing">Prerequisites</a></div>
+                </div>
             </div>
             <div>
                 <h2>Portfolio contest</h2>
@@ -43,5 +55,19 @@
                 </table>
             </div>
         </div>
+        <script>
+            var nav = document.getElementById("nav");
+            var firstCon = document.querySelector(".first");
+            var navPos = nav.offsetTop;
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset >= navPos) {
+                    nav.classList.add("nav-fixed");
+                    firstCon.style.paddingTop="2.4vw";
+                } else {
+                    nav.classList.remove("nav-fixed");
+                    firstCon.style.paddingTop="0vw";
+                }
+            });
+        </script>
     </body>
 </html>
