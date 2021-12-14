@@ -118,6 +118,14 @@ a {
     .mob {
         display: block;
     }
+    .register {
+        flex-direction: column;
+        align-items: center;
+    }
+    .register > div {
+        font-size: 0.8rem;
+        padding: 2vw;
+    }
     .per {
         font-size: 0.8rem;
     }
